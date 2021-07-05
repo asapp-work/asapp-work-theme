@@ -1,20 +1,5 @@
 <?php
 
-// ショートコード使用
-add_shortcode('url', 'shortcode_url');
-function shortcode_url() {
-return get_bloginfo('url');
-}
-add_shortcode('uri', 'tmp_dir');
-function tmp_dir() {
-return get_template_directory_uri();
-}
-add_shortcode('cdir', 'child_dir');
-function child_dir() {
-return get_stylesheet_directory_uri();
-}
-
-
 //本文文字数制限
 function custom_excerpt_length( $length ) {
   return 20;	//表示したい文字数
@@ -31,8 +16,6 @@ function my_scripts() {
   wp_enqueue_style( 'style-name-1', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all' );
   wp_enqueue_script( 'script-name-1', get_template_directory_uri() . '/js/header.js', array( 'jquery' ), '1.0.0', true );
   wp_enqueue_script( 'script-name-2', get_template_directory_uri() . '/js/animation.js', array( 'jquery' ), '1.0.0', true );
-  // wp_enqueue_script( 'script-name-3', get_template_directory_uri() . '/assets/js/nav.js', array( 'jquery' ), '1.0.0', true );
-  // wp_enqueue_script( 'script-name-4', get_template_directory_uri() . '/assets/js/wordpress.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
