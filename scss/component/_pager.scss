@@ -1,0 +1,59 @@
+/*pager--------------------*/
+
+.pager {
+    margin: 60px auto 0;
+    width: max-content;
+  }
+
+  .wp-pagenavi {
+      clear: both;
+      text-align:center;
+      display: flex;
+      flex-wrap: wrap; 
+  }
+
+  .wp-pagenavi a, .wp-pagenavi span {
+      color: $blue1;
+      background-color: #fff;
+      border: 1px solid $blue1;
+      padding: 8px 15px;
+      margin: 4px 2px;
+      white-space: nowrap;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transition: 0.2s ease-in-out;
+      -moz-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  .wp-pagenavi a:hover{
+    color: $white1;
+    background-color: $blue1;
+      border-color: $blue1;
+      }
+
+  .wp-pagenavi span.current{
+      color: #fff;
+      background-color:$blue1;
+      border-color: $blue1;
+      font-weight: bold;
+      }
+
+      @media screen and (max-width: 768px) {
+        .pager {
+          margin: 24px auto ;
+        }
+
+        .wp-pagenavi a, .wp-pagenavi span {
+          padding: 6px 10px;
+        }
+      }
+
+
+
+
+/*pager--------------------*/

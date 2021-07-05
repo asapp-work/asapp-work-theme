@@ -1,0 +1,80 @@
+/*contact--------------------*/
+
+.p-contact-block{
+
+    &__group{
+        @include auto;
+        margin-bottom: 80px;
+
+        @include mq(medium,max){
+           max-width: 400px;
+        }
+    }
+
+    &__item{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include mq(medium,max){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__lead{
+        font-size: 1.6rem;
+        @include bold;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        margin-right: 20px;
+        margin-top: 5px;
+
+        @include mq(medium,max){
+            width: inherit;
+            margin-right: auto;
+        }
+    }
+
+    &__span{
+        background-color: $blue1;
+        padding: 5px 10px;
+        border-radius: 50px;
+        color: $white1;
+        font-size: 1.6rem;
+        display: inline-block;
+
+        @include mq(medium,max){
+            margin-left: 25px;
+        }
+    }
+
+    &__input{
+        height: 40px;
+        width: 500px;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid $maincolor;
+        border-radius: 5px;
+
+        @include mq(medium,max){
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+
+    &__textarea{
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+/*contact--------------------*/

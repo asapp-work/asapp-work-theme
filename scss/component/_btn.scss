@@ -1,0 +1,24 @@
+/*btn--------------------*/
+
+.c-btn{
+    font-size: 2.0rem;
+    text-align: center;
+    display: block;
+    @include auto;
+    border: 1px solid $maincolor;
+    border-radius: 50px;
+    padding: 10px 35px;
+    transition: all 0.5s;
+    width: fit-content;
+
+    &:hover{
+        color: $white1;
+        background-color: $maincolor;;
+    }
+}
+
+
+
+
+
+/*btn--------------------*/

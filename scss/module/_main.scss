@@ -1,0 +1,14 @@
+/*main--------------------*/
+
+.l-main{
+    margin-top: 250px;
+
+    @include mq(medium,max){
+        margin-top: 150px;
+    }
+}
+
+
+
+
+/*main--------------------*/

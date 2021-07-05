@@ -1,0 +1,45 @@
+/*designer--------------------*/
+
+.p-designer-block{
+
+    &__area{
+        display: flex;
+        justify-content: space-between;
+
+        @include mq(medium,max){
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+   
+    &__ttl{
+        font-size: 2.0rem;
+        margin-bottom: 25px;
+    }
+
+    &__image{
+        width: 200px;
+        border-radius: 50%;
+        margin-right: 50px;
+
+        @include mq(medium,max){
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__txt{
+        line-height: 1.5;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+/*designer--------------------*/

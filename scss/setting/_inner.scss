@@ -1,0 +1,36 @@
+/*inner--------------------*/
+
+.l-inner{
+    max-width: 1920px;
+    width: 95%;
+    @include auto;
+
+    @include mq(medium,max){
+        max-width: inherit;
+    }
+}
+
+.l-inner02{
+    max-width: 800px;
+    width: 95%;
+    @include auto;
+
+    @include mq(medium,max){
+        max-width: inherit;
+    }
+}
+
+.l-inner03{
+    max-width: 800px;
+    width: 95%;
+    @include auto;
+
+    @include mq(medium,max){
+        max-width: inherit;
+    }
+}
+
+
+
+
+/*inner--------------------*/

@@ -1,0 +1,63 @@
+/*home--------------------*/
+
+.p-home-work{
+
+    
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        &::after{
+            content: "";
+            display: block;
+            width: calc(100%/3 - 5px);
+        }
+    }
+
+    &__list{
+        width: calc(100%/3 - 5px);
+        margin-bottom: 5px;
+        overflow: hidden;
+
+        @include mq(large,max){
+            width: calc(100%/2 - 5px);
+        }
+    }
+
+    &__link{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+    }
+
+    &__image{
+        transition: all 0.5s;
+        height: 500px;
+        object-fit: cover;  
+
+        @include mq(xlarge,max){
+            height: 400px;
+        }
+
+        @include mq(large,max){
+            height: 300px;
+        }
+
+        @include mq(medium,max){
+            height: 200px;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+
+
+
+/*home--------------------*/

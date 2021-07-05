@@ -1,0 +1,22 @@
+/*base--------------------*/
+
+a{
+	transition: all 0.5s;
+
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+html{
+	-webkit-text-size-adjust: 100%;
+}
+
+html.open{
+	height: 100vh;
+	width: 100%;
+	overflow:hidden;
+}
+
+
+/*base--------------------*/
