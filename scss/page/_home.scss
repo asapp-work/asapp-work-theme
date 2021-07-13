@@ -1,8 +1,6 @@
 /*home--------------------*/
 
-.p-home-work{
-
-    
+.p-home-gallery{
     &__group{
         display: flex;
         flex-wrap: wrap;
@@ -57,7 +55,102 @@
     }
 }
 
+.p-home-blog{
+
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &::after{
+            content: "";
+            display: block;
+            width: calc(100%/2 - 30px);
+        }
+    }
+
+    &__item{
+        display: flex;
 
 
+        @include mq(medium,max){
+           flex-direction: column;
+        }
+    }
+
+    &__link{
+        width: calc(100%/2 - 30px);
+        border: 1px solid $maincolor;
+        height: 250px;
+        margin-bottom: 20px;
+
+        @include mq(xlarge,max){
+            width: 100%;
+            height: auto;
+        }
+
+        @include mq(medium,max){
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__link:last-child{
+        margin-bottom: 80px;
+    }
+
+    &__top{
+        position: relative;
+    }
+
+    &__image{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+
+        @include mq(medium,max){
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    &__category{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $white1;
+        padding: 10px;
+        border-right: 1px solid $maincolor;
+        border-bottom: 1px solid $maincolor;
+        display: inline-block;
+    }
+
+    &__bottom{
+        padding: 15px;
+        line-height: 1.5;
+    }
+
+    &__date{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__ttl{
+        margin-bottom: 25px;
+        font-size: 2.0rem;
+    }
+
+    &__txt{
+        margin-bottom: 25px;
+    }
+
+}
+
+.c-btn-01{
+    margin-bottom: 80px;
+}
 
 /*home--------------------*/
